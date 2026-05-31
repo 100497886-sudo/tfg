@@ -2,7 +2,7 @@
   border-width: 2px;
 }
 body {
-  font-family: Jost;
+  font-family: Montserrat;
 }
 .display-1 {
   font-family: 'Source Sans Pro', sans-serif;
@@ -13,7 +13,7 @@ body {
   font-size: 5.75rem;
 }
 .display-2 {
-  font-family: 'Merriweather', serif;
+  font-family: 'Source Sans Pro', serif;
   font-size: 2.6rem;
   line-height: 1.1;
 }
@@ -21,7 +21,7 @@ body {
   font-size: 3.25rem;
 }
 .display-4 {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   line-height: 1.5;
 }
@@ -593,7 +593,7 @@ a:hover {
   border-radius: 100px;
 }
 .form-control {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   line-height: 1.5;
   font-weight: 400;
@@ -607,7 +607,7 @@ a:hover {
   border-color: #4479d9 !important;
 }
 .form-control:-webkit-input-placeholder {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   line-height: 1.5;
   font-weight: 400;
@@ -1404,6 +1404,7 @@ a {
 }
 .cid-tmaR2sMPWT {
   background-image: url("../../../assets/images/mbr-2-1920x1243.jpeg");
+  
 }
 .cid-tmaR2sMPWT .mbr-section-title {
   text-align: center;
@@ -7959,4 +7960,9 @@ a {
   .navbar .dropdown:hover > .nav-link.dropdown-toggle::after {
     transform: rotate(180deg);
   }
+}
+
+
+.navbar-dropdown .navbar-nav .nav-link {
+    font-size: 16px !important; /* Cambia 16px por el tamaño que desees */
 }

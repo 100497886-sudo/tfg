@@ -959,3 +959,54 @@ blockquote {
 	top: 0;
 	left: -2400px;
 }
+
+/* --- Efecto amarillo llamativo con aumento de tamaño --- */
+input:focus, textarea:focus, select:focus {
+    border: 2.5px solid #F5C90D !important; /* Borde amarillo grueso */
+    transform: scale(1.02); /* Aumenta el tamaño un 2% de forma proporcional */
+    outline: none !important; /* Quita el borde por defecto */
+    transition: all 0.25s ease-in-out; /* Hace que el crecimiento y el brillo sean fluidos */
+    position: relative; /* Asegura que el campo se agrande por encima de otros elementos */
+    z-index: 10; /* Evita que los elementos de al lado tapen el campo al agrandarse */
+}
+
+/* Animación de regreso suave al salir del campo */
+input, textarea, select {
+    transition: all 0.25s ease-in-out;
+}
+
+
+/* Hace visible el selector del teclado al pulsar Tab */
+a:focus, button:focus, input:focus {
+    outline: 3px solid #ffe161 !important; /* Un borde amarillo llamativo al estilo de tu proyecto */
+    outline-offset: 4px;
+    background-color: rgba(255, 225, 97, 0.2) !important; /* Un leve fondo sutil */
+}
+
+
+/* --- Corrección de espacio para la cabecera del Sitemap --- */
+.sitemap-header-block {
+    padding-top: 8rem;      /* Empuja el título hacia abajo para que no lo tape el menú fijo */
+    padding-bottom: 3rem;   /* Deja una separación elegante con el contenido inferior */
+    background-color: #000000; /* Asegura un fondo blanco limpio */
+}
+
+/* Ajuste opcional para pantallas de móviles (menús más compactos) */
+@media (max-width: 767px) {
+    .sitemap-header-block {
+        padding-top: 6rem;
+        padding-bottom: 2rem;
+    }
+}
+
+/* --- Reducir el zoom general del cuerpo del sitemap --- */
+.sitemap-header-block + section, 
+.sitemap-header-block + div {
+    transform: scale(0.85); /* Reduce el tamaño general al 85% */
+    transform-origin: top center; /* Asegura que se encoja manteniendo el eje centrado arriba */
+    margin-bottom: -5rem; /* Compensa el espacio vacío que deja abajo al achicarse */
+}
+
+.image-sitemap {
+    background-color: #000000;
+}
