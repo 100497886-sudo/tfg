@@ -966,7 +966,6 @@ blockquote {
 
 
 
-
 /* Animación de regreso suave al salir del campo */
 input, textarea, select {
     transition: all 0.25s ease-in-out;
@@ -985,30 +984,22 @@ input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
     border: 2.5px solid #F5C90D !important;
-    outline: 3px solid #ffe161 !important;
+    outline: 3px solid #E6C63B !important;
     outline-offset: 4px;
 }
 
 a:focus-visible,
 button:focus-visible {
-    outline: 3px solid #ffe161 !important;
+    outline: 3px solid #E6C63B !important;
     outline-offset: 4px;
-    background-color: rgba(255, 225, 97, 0.2) !important;
+    /* background-color: rgba(255, 225, 97, 0.2) !important;*/
 }
-
-
-
-
-
-
-
-
 
 
 /* --- Corrección de espacio para la cabecera del Sitemap --- */
 .sitemap-header-block {
     padding-top: 8rem;      /* Empuja el título hacia abajo para que no lo tape el menú fijo */
-    padding-bottom: 3rem;   /* Deja una separación elegante con el contenido inferior */
+    padding-bottom: 1rem;   /* Deja una separación elegante con el contenido inferior */
     background-color: #000000; /* Asegura un fondo blanco limpio */
 }
 
@@ -1020,23 +1011,12 @@ button:focus-visible {
     }
 }
 
-/* --- Reducir el zoom general del cuerpo del sitemap --- */
-.sitemap-header-block + section, 
-.sitemap-header-block + div {
-    transform: scale(0.85); /* Reduce el tamaño general al 85% */
-    transform-origin: top center; /* Asegura que se encoja manteniendo el eje centrado arriba */
-    margin-bottom: -5rem; /* Compensa el espacio vacío que deja abajo al achicarse */
-}
-
-.image-sitemap {
-    background-color: #000000;
-}
 
 
 .active-page {
-    color: #0d6efd !important;
+    color: #2150A5 !important;
     font-weight: 700;
-    border-bottom: 3px solid #0d6efd;
+    border-bottom: 3px solid #2150A5;
 }
 
 #content17-4k .card-header {
@@ -1068,4 +1048,68 @@ button:focus-visible {
     .navbar-brand .navbar-caption {
         font-size: 1rem !important;
     }
+}
+
+/* subrayar footer y secciones home*/
+.faq-link {
+    text-decoration: underline;
+    color: #E6C63B !important;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+
+/* sitemap */
+/* --- Reducir el zoom general del cuerpo del sitemap --- */
+.image-sitemap {
+    background-color: #000000;
+    transform: scale(0.85);
+    transform-origin: top center;
+    margin-bottom: -5rem;
+}
+.image-sitemap {
+    background-color: #000000;
+}
+
+.sitemap-text-block {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    background-color: #000000;
+}
+
+.sitemap-text-card {
+    background-color: #2A2A2A;
+    border: 1px solid #333333;
+    border-radius: 12px;
+    padding: 2rem;
+    color: #FAFAFA;
+    text-align: left;
+}
+
+.sitemap-text-card h2,
+.sitemap-text-card p,
+.sitemap-text-card li {
+    color: #FAFAFA;
+}
+
+.sitemap-list {
+    display: inline-block;
+    text-align: left;
+    margin: 1.5rem auto 0;
+    padding-left: 1.5rem;
+}
+
+.sitemap-list li {
+    line-height: 1.7;
+    margin-bottom: 0.7rem;
+}
+
+.sitemap-list ul {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    padding-left: 1.5rem;
+}
+
+.sitemap-list ul li {
+    margin-bottom: 0.4rem;
 }
