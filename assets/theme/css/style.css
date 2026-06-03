@@ -1044,11 +1044,12 @@ button:focus-visible {
     background-color: #ffffff !important;
 }
 
+/*
 @media (max-width: 991px) {
     .navbar-brand .navbar-caption {
         font-size: 1rem !important;
     }
-}
+} */ 
 
 /* subrayar footer y secciones home*/
 .faq-link {
